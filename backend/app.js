@@ -4,9 +4,7 @@ const taskRoutes = require('./routes/taskRoutes');
 
 const app = express();
 
-app.use(cors({
-    origin: 'https://web-front-sigma.vercel.app'
-}));
+app.use(cors()); // Esto permite que cualquier origen (incluyendo tu navegador) consulte la API
 
 app.use(express.json());
 
