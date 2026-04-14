@@ -5,7 +5,7 @@ require('dotenv').config({
     path: path.resolve(__dirname, '../../.env')
 });
 
-const connectionString = process.env.DATABASE_URL || process.env.MYSQL_URL;
+const connectionString = process.env.DATABASE_URL || process.env.MYSQL_URL || process.env.DB_HOST;
 const isConnectionString = typeof connectionString === 'string'
     && /^mysql:\/\//i.test(connectionString.trim());
 
