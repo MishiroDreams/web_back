@@ -5,7 +5,7 @@ const taskRoutes = require('./routes/taskRoutes');
 const app = express();
 
 app.use(cors({
-    origin: 'https://web-front-sigma.vercel.app/'
+    origin: 'https://web-front-sigma.vercel.app'
 }));
 
 app.use(express.json());
